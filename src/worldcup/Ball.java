@@ -12,12 +12,15 @@ public class Ball {
 		this.material = material;
 	}
 
+	public Ball() {
+		this.material = "Polyvinyl chloride";
+	}
+	
 	public Ball(String material) {
 		super();
 		this.material = material;
 	}
 	
-
 	public void move() {
 		System.out.println(" moving the ball");
 	}
