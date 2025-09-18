@@ -8,6 +8,7 @@ import java.util.Random;
 public class Forward extends Player {
 	boolean killer;
 
+
 	public void drible() {
 		System.out.println("dribbling");
 	}

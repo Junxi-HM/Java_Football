@@ -3,6 +3,7 @@ package worldcup;
 public class Ball {
 	String material;
 	
+	
 	public String getMaterial() {
 		return material;
 	}
@@ -18,6 +19,10 @@ public class Ball {
 	public Ball(String material) {
 		super();
 		this.material = material;
+	}
+	
+	public Ball() {
+		this.material = "pvc";
 	}
 
 	

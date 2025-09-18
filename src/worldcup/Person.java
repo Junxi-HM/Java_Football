@@ -6,7 +6,6 @@ package worldcup;
 public abstract class Person {
 	int age;
 	
-	
 	/**
 	 * @return the age
 	 */

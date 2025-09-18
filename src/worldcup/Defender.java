@@ -5,10 +5,11 @@ import java.util.Random;
 /**
  *  Class to define the defender
  */
-public class Defender { 
+public class Defender extends Player{ 
 	boolean mark;
 
-    public void steal(Ball ball){
+
+	public void steal(Ball ball){
     	String[] effects = { "with fault", "without fault" };
 
 		Random rand = new Random();
