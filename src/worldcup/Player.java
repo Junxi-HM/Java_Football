@@ -13,6 +13,6 @@ public class Player extends Person{
 	
 	public void passBall() {
 		System.out.println("passing Ball");
-		
+		System.out.println("Please wait...");
 	}
 }
