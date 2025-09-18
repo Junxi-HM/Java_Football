@@ -17,9 +17,6 @@ public class Ball {
 		this.material = material;
 	}
 	
-	public Ball() {
-		this.material = "pvc";
-	}
 
 	public void move() {
 		System.out.println(" moving the ball");
