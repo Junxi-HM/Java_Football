@@ -27,7 +27,7 @@ public class Goalkeeper extends Player {
 
 		Random rand = new Random();
 		String effect = effects[rand.nextInt(effects.length)];
-		
+
 		System.out.println("catching " + effect);
 	}
 }

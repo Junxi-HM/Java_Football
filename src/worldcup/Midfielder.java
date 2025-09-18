@@ -5,7 +5,7 @@ package worldcup;
  */
 public class Midfielder extends Player {
 	private boolean vision;
-
+	
 	/**
 	 * @return the vision
 	 */
