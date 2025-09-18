@@ -1,7 +1,7 @@
 package worldcup;
 
 public class Ball {
-	String material;
+	private String material;
 	
 	
 	public String getMaterial() {

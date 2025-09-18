@@ -4,7 +4,7 @@ package worldcup;
  * Class to define the Person
  */
 public abstract class Person {
-	int age;
+	private int age;
 	
 	/**
 	 * @return the age

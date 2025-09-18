@@ -1,7 +1,7 @@
 package worldcup;
 
 public class Player extends Person{
-	String position;
+	private String position;
 
 	public String getPosition() {
 		return position;
