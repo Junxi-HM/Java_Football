@@ -22,12 +22,24 @@ public class Goalkeeper extends Player {
 		this.globes = globes;
 	}
 
-	public void block(Ball ball) {
+	public boolean block(Ball ball) {
 		String[] effects = { "with success", "without success" };
 
 		Random rand = new Random();
 		String effect = effects[rand.nextInt(effects.length)];
 
 		System.out.println("catching " + effect);
+
+		boolean action;
+
+		if (effect.equalsIgnoreCase("with success")) {
+			action = true;
+
+		} else {
+			action = false;
+		}
+		
+		return action;
+
 	}
 }

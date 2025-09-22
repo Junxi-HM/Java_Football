@@ -171,7 +171,9 @@ public class Game {
 			} else if (selectedPlayer instanceof Defender) {
 				((Defender) selectedPlayer).steal(this.getBall());
 			} else if (selectedPlayer instanceof Goalkeeper) {
-				((Goalkeeper) selectedPlayer).block(this.getBall());
+				if (((Goalkeeper) selectedPlayer).block(this.getBall()) == false) {
+					System.out.println("Scored");
+				}
 			}
 		}
 		System.out.println();
