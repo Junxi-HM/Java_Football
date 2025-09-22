@@ -75,7 +75,13 @@ public class Game {
 		System.out.println("starting application");
 		// create game
 		Game game = new Game();
-		game.setField(new Field(100));
+		Light light = new Light("White", false);
+		Goal goal_1 = new Goal(10);
+		Goal goal_2 = new Goal(10);
+		ArrayList<Goal> goals = new ArrayList<>();
+		goals.add(goal_1);
+		goals.add(goal_2);
+		game.setField(new Field(100, light, goals));
 		game.setDate(new Date());
 		game.setBall(new Ball());
 
@@ -132,8 +138,10 @@ public class Game {
 	}
 
 	public void start() {
+		System.out.println();
+		field.light();
+		System.out.println();
 		System.out.println("starting match actions...");
-
 		Random rand = new Random();
 
 		for (int i = 0; i < 10; i++) {
@@ -166,6 +174,9 @@ public class Game {
 				((Goalkeeper) selectedPlayer).block(this.getBall());
 			}
 		}
+		System.out.println();
+		field.light();
+		System.out.println();
 	}
 
 }
