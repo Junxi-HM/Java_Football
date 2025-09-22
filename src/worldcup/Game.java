@@ -13,7 +13,7 @@ public class Game {
 	private Date date;
 	private Ball ball;
 	private ArrayList<Team> teams;
-
+	private Referee referee;
 	/**
 	 * @return the field
 	 */
@@ -69,7 +69,19 @@ public class Game {
 	public void setTeams(ArrayList<Team> teams) {
 		this.teams = teams;
 	}
+	/**
+     * @return the referee
+     */
+    public Referee getReferee() {
+        return referee;
+    }
 
+    /**
+     * @param referee the referee to set
+     */
+    public void setReferee(Referee referee) {
+        this.referee = referee;
+    }
 	public static void main(String[] args) {
 
 		System.out.println("starting application");
@@ -84,6 +96,7 @@ public class Game {
 		game.setField(new Field(100, light, goals));
 		game.setDate(new Date());
 		game.setBall(new Ball());
+		game.setReferee(new Referee());
 
 		// create players team A
 		ArrayList<Player> listA = new ArrayList<Player>();
@@ -173,6 +186,7 @@ public class Game {
 			} else if (selectedPlayer instanceof Goalkeeper) {
 				((Goalkeeper) selectedPlayer).block(this.getBall());
 			}
+			referee.decideFoul();
 		}
 		System.out.println();
 		field.light();
